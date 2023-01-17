@@ -1,6 +1,6 @@
 import React from 'react';
 // import BottomFitchers from './BottomFeatures';
-// import TopFeatures from './TopFeatures';    // TODO: Fitchers =? features
+// import TopFeatures from './TopFeatures';    // Features
 
 
 

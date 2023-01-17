@@ -1,25 +1,27 @@
-import * as React from "react";
+import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-
 const Header = () => {
-
+  const [urlElement, setUrlElement] = useState("");
   const navigate = useNavigate();
 
-  const logOut = () => {
-    navigate("/");
-  }
+  useEffect(() => {
+    let urlElements = window.location.href.split("/");
+    setUrlElement(urlElements[3]);
+  });
 
-    return (
-      <div className="Header">
-        <div className="logo-wrap">
-          {/* <img src={logo}/> */}
-        </div>
+  return (
+    <div className="Header">
+      <div className="logo-wrap">{/* <img src={logo}/> */}</div>
+      {urlElement ? (
         <div className="logOutBtn-wrap">
-          <button className="logOutBtn" onClick={() => logOut()}>Log Out</button>
+          <button className="logOutBtn" onClick={() => navigate("/")}>
+            Log Out
+          </button>
         </div>
-      </div>
-    );
-  }
-  
-  export default Header;
+      ) : null}
+    </div>
+  );
+};
+
+export default Header;

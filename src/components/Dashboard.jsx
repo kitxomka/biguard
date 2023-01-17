@@ -1,4 +1,4 @@
-import * as React from "react";
+import React from "react";
 
 import SidePanel from '../components/SidePanel';
 import MainDashboard from './MainDashboard';
