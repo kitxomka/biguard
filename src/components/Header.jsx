@@ -12,7 +12,7 @@ const Header = () => {
 
   return (
     <div className="Header">
-      <div className="logo-wrap">{/* <img src={logo}/> */}</div>
+      <div className="logo-wrap"></div>
       {urlElement ? (
         <div className="logOutBtn-wrap">
           <button className="logOutBtn" onClick={() => navigate("/")}>

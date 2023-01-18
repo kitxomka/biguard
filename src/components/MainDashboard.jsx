@@ -1,21 +1,21 @@
 import React from "react";
-import Account from "./Account";
+import Accounts from "./Accounts";
 import LoadMore from "./LoadMore";
 import ProfileIcon from "./ProfileIcon";
 import ProgressBar from "./ProgressBar";
 import RecentProblems from "./RecentProblems";
 import SecurityChecklist from "./SecurityChecklist";
 import UserData from "./UserData";
-import Vip from "./Vip";
+import VipIcon from "./VipIcon";
 
 const MainDashboard = () => {
   return (
     <div className="main">
-      <Account />
+      <Accounts />
       <ProfileIcon />
       <UserData />
       <ProgressBar />
-      <Vip />
+      <VipIcon />
       <SecurityChecklist />
       <LoadMore />
       <RecentProblems/>

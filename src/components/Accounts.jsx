@@ -1,6 +1,6 @@
 import React from "react";
 
-const Account = () => {
+const Accounts = () => {
   const accountsData = [
     { type: "instagram" },
     { type: "facebook" },
@@ -19,4 +19,4 @@ const Account = () => {
   );
 };
 
-export default Account;
+export default Accounts;

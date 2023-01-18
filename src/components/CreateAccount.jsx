@@ -8,8 +8,8 @@ const CreateAccount = () => {
 
     return (
       <div className="CreateAccount">
-        <p>CreateAccount</p>
-        <button onClick={()=>navigate("/dashboard")}>Go to the Dashboard</button>
+        <p>Create Account</p>
+        <button className="goToDashboard" onClick={()=>navigate("/dashboard")}>Go to Dashboard</button>
       </div>
     );
   }

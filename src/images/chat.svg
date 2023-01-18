@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="23.084" height="26.91" viewBox="0 0 23.084 26.91">
+  <g id="Biguard_Chat_icon-01" data-name="Biguard_Chat icon-01" transform="translate(0 0)">
+    <path id="Path_2036" data-name="Path 2036" d="M152.313,114.2H137.961a4.361,4.361,0,0,0-4.361,4.361v13.014a4.361,4.361,0,0,0,4.361,4.361h.109v4.292a.886.886,0,0,0,.892.882.869.869,0,0,0,.624-.258l.981-.981a13.783,13.783,0,0,1,3.013-2.28,13.121,13.121,0,0,1,3.509-1.348,9.793,9.793,0,0,1,2.151-.307h3.083a4.361,4.361,0,0,0,4.361-4.361V118.561A4.363,4.363,0,0,0,152.313,114.2Z" transform="translate(-133.6 -114.2)" fill="#fff"/>
+    <g id="Group_1206" data-name="Group 1206" transform="translate(4.173 3.528)">
+      <path id="Path_2037" data-name="Path 2037" d="M187.8,156.292v1.8h.8v3.261a1.345,1.345,0,0,1-1.338,1.338h-8.415a1.345,1.345,0,0,1-1.338-1.338v-8.415a1.345,1.345,0,0,1,1.338-1.338h8.415a1.345,1.345,0,0,1,1.338,1.338v2.1H190.4v-2.1a3.143,3.143,0,0,0-3.142-3.142h-8.415a3.143,3.143,0,0,0-3.142,3.142v8.415a3.143,3.143,0,0,0,3.142,3.142h8.415a3.143,3.143,0,0,0,3.142-3.142V158.1h.8v-1.8Z" transform="translate(-175.7 -149.8)" fill="#508adf"/>
+      <g id="Group_1205" data-name="Group 1205" transform="translate(3.41 6.482)">
+        <ellipse id="Ellipse_39" data-name="Ellipse 39" cx="0.862" cy="0.862" rx="0.862" ry="0.862" fill="#508adf"/>
+        <ellipse id="Ellipse_40" data-name="Ellipse 40" cx="0.862" cy="0.862" rx="0.862" ry="0.862" transform="translate(2.795)" fill="#508adf"/>
+        <ellipse id="Ellipse_41" data-name="Ellipse 41" cx="0.862" cy="0.862" rx="0.862" ry="0.862" transform="translate(5.58)" fill="#508adf"/>
+      </g>
+    </g>
+  </g>
+</svg>

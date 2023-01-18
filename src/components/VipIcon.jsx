@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Vip = () => {
+const VipIcon = () => {
   return (
     <div className='vipWrapper'>
         <div className="iconVip">ic</div>
@@ -9,4 +9,4 @@ const Vip = () => {
   )
 }
 
-export default Vip;
+export default VipIcon;

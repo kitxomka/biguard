@@ -1,24 +1,14 @@
-import React from 'react';
-// import BottomFitchers from './BottomFeatures';
-// import TopFeatures from './TopFeatures';    // Features
-
-
+import React from "react";
+import BottomFeatures from "./BottomFeatures";
+import TopFeatures from "./TopFeatures";
 
 const SidePanel = () => {
   return (
-    <div className='sidePanel'>
-        {/* <div className="wrraper"> */}
-            <div className='top-features'>
-                {/* <TopFeatures /> */}
-                top
-            </div>
-            <div className="bottom-features">
-                {/* <BottomFeatures/> */}
-                buttom
-            </div>
-        {/* </div> */}
+    <div className="sidePanel">
+      <TopFeatures />
+      <BottomFeatures />
     </div>
-  )
-}
+  );
+};
 
 export default SidePanel;

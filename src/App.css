@@ -8,9 +8,13 @@
 }
 
 .logo-wrap {
-    width: 12rem;
     margin-left: 23rem;
     display: inline-block;
+    margin-top: 22px;
+    width: 153px;
+    height: 38px;
+    background: transparent url('./images/logo.svg') 0% 0% no-repeat padding-box;
+    opacity: 1;
 }
 
 .logOutBtn-wrap {
@@ -19,10 +23,10 @@
     margin-top: 0.5rem;
 }
 
-.logOutBtn {
+.logOutBtn,
+.goToDashboard {
     background: #508ADF 0% 0% no-repeat padding-box;
-    top: 17px;
-    left: 1458px;
+    margin-top: 7px;
     width: 160px;
     height: 44px;
     border: none;
@@ -53,7 +57,6 @@
 }
 
 .sidePanel {
-    margin-top: 112px;
     margin-left: 38px;
     width: 241px;
     height: 923px;
@@ -61,12 +64,68 @@
     box-shadow: 6px 6px 6px #00000012;
     border-radius: 24px;
     opacity: 1;
+
 }
+
+.bottom-features {
+    margin-top: 796px;
+    width: 241px;
+    height: 106px;
+    background: #E9F1FD 0% 0% no-repeat padding-box;
+    border-radius: 0px 0px 24px 24px;
+    opacity: 1;
+    text-align: center;
+}
+
+.feature {
+    top: 136px;
+    left: 60px;
+    width: 79px;
+    height: 79px;
+    background: #E0E6EE 0% 0% no-repeat padding-box;
+    margin: 0 auto;
+    opacity: 1;
+}
+.chatWrap, .settingWrap{
+    width: 50%;
+    height: 65px;
+    margin-top: 15px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.chat, .settings {
+    width: 48px;
+    height: 48px;
+    background: #508ADF 0% 0% no-repeat padding-box;
+    opacity: 1;
+    border-radius: 50%;
+}
+
+.chatText, .settingsText {
+    top: 1000px;
+    left: 78px;
+    width: 74px;
+    height: 17px;
+    text-align: center;
+    letter-spacing: 0px;
+    color: #508ADF;
+    opacity: 1;
+    font-size: 13px;
+}
+
+.chatIcon {
+    width: 23px;
+    height: 27px;
+    background: transparent url('images/chat.svg') no-repeat padding-box;
+    opacity: 1;
+    margin: 0 auto;
+}
+
 
 .main {
     /* top: 77px; */
     /* left: 0px; */
-    width: 1679px;
+    width: 75%;
     height: 1442px;
     background: #FCFCFC 0% 0% no-repeat padding-box;
     opacity: 1;
@@ -186,11 +245,13 @@
 }
 
 .securityWrap,
-.loadMoreWrap {
+.loadMoreWrap,
+.problemsWrap {
     width: 100%;
 }
 
-.securityTitle {
+.securityTitle,
+.problemsTitle {
     /* text-align: center; */
     font: normal normal 900 32px/58px Exo;
     letter-spacing: 0px;
@@ -226,4 +287,22 @@
     color: #21244E;
     opacity: 1;
     cursor: pointer;
+}
+
+
+.problems {
+    text-align: center;
+}
+
+.singleProblem {
+    margin-top: 10px;
+    margin-left: 15px;
+    width: 208px;
+    height: 167px;
+    background: #F0F0F0 0% 0% no-repeat padding-box;
+    box-shadow: 6px 6px 6px #00000012;
+    border-radius: 10px;
+    opacity: 1;
+    display: inline-block;
+
 }
