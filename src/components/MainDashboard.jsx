@@ -6,7 +6,7 @@ import ProgressBar from "./ProgressBar";
 import RecentProblems from "./RecentProblems";
 import SecurityChecklist from "./SecurityChecklist";
 import UserData from "./UserData";
-import VipIcon from "./VipIcon";
+import AccountType from "./AccountType";
 
 const MainDashboard = () => {
   return (
@@ -15,7 +15,7 @@ const MainDashboard = () => {
       <ProfileIcon />
       <UserData />
       <ProgressBar />
-      <VipIcon />
+      <AccountType />
       <SecurityChecklist />
       <LoadMore />
       <RecentProblems/>

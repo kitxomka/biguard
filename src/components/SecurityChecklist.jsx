@@ -1,38 +1,9 @@
 import React from "react";
+import { useSelector } from "react-redux";
 
 const SecurityChecklist = () => {
-  const tableData = [
-    {
-      task: "Pick a strong rassword",
-      priority: "High",
-      effort: "2 min",
-      done: false,
-    },
-    {
-      task: "Torn on two-factor autentication",
-      priority: "Medium",
-      effort: "2-10 min",
-      done: false,
-    },
-    {
-      task: "Download your data",
-      priority: "Low",
-      effort: "2 min",
-      done: false,
-    },
-    {
-      task: "Check Login activity",
-      priority: "Low",
-      effort: "5 min",
-      done: false,
-    },
-    {
-      task: "Change Message Controls",
-      priority: "Medium",
-      effort: "2 min",
-      done: false,
-    },
-  ];
+  
+  const securityChecklist = useSelector((state) => state.app.securityChecklist);
 
   return (
     <div className="securityWrap">
@@ -47,12 +18,12 @@ const SecurityChecklist = () => {
           </tr>
         </thead>
         <tbody>
-          {tableData.map((rowValues, index) => {
+          {securityChecklist.map((rowValues, index) => {
             return (
               <tr key={index}>
-                <td>{rowValues.task}</td>
-                <td>{rowValues.priority}</td>
-                <td>{rowValues.effort}</td>
+                <td><a href="#" style={{color: '#508ADF', fontSize: '16px'}}>{rowValues.task}</a></td>
+                <td><div className={`priorityWrap ${rowValues.priority}`}>{rowValues.priority}</div></td>
+                <td><div className="effortWrap">{rowValues.effort}</div></td>
                 <td>{rowValues.done}</td>
               </tr>
             );
