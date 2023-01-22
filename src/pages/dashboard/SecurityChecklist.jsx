@@ -1,9 +1,11 @@
 import React from "react";
 import { useSelector } from "react-redux";
 
+
 const SecurityChecklist = () => {
   
   const securityChecklist = useSelector((state) => state.app.securityChecklist);
+
 
   return (
     <div className="securityWrap">
@@ -11,20 +13,22 @@ const SecurityChecklist = () => {
       <table className="securityTable">
         <thead>
           <tr>
-            <th>Task</th>
-            <th>Priority</th>
-            <th>Effort</th>
-            <th>Done</th>
+            <th style={{width: '398px'}}>Task</th>
+            <th className="priorityTh">Priority</th>
+            <th className="effortTh">Effort</th>
+            <th className="doneTh">Done</th>
           </tr>
         </thead>
         <tbody>
           {securityChecklist.map((rowValues, index) => {
             return (
               <tr key={index}>
-                <td><a href="#" style={{color: '#508ADF', fontSize: '16px'}}>{rowValues.task}</a></td>
-                <td><div className={`priorityWrap ${rowValues.priority}`}>{rowValues.priority}</div></td>
-                <td><div className="effortWrap">{rowValues.effort}</div></td>
-                <td>{rowValues.done}</td>
+                <td className="task">{rowValues.task}</td>
+                <td className="priority"><div className={`priorityWrap ${rowValues.priority}`}>{rowValues.priority}</div></td>
+                <td className="effort"><div className="effortWrap">{rowValues.effort}</div></td>
+                <td className="done">
+                  <input type="checkbox" id="checkbox-done" name="done" className="checkbox-done"/>
+                </td>
               </tr>
             );
           })}

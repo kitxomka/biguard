@@ -1,11 +1,11 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-import { accountsData } from "../images/data";
+import { accountsData, securityData } from "../images/data";
 
 const initialState = {
     userAccounts: accountsData,
     userData: {},
-    securityChecklist: []
+    securityChecklist: securityData
 }
 
 
@@ -19,7 +19,7 @@ export const appSlice = createSlice({
         },
         getSecurityData: (state, action) => {
             state.securityChecklist = action.payload;
-        }
+        },
     }
 });
 

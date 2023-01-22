@@ -1,12 +1,4 @@
-/* Header styles */
-.Header {
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 77px;
-    border-bottom: 2px solid #7BA6E6;
-}
-
+/* Some Header styles */
 .logo-wrap {
     margin-left: 23rem;
     display: inline-block;
@@ -23,31 +15,15 @@
     margin-top: 0.5rem;
 }
 
-.logOutBtn,
-.goToDashboard {
-    background: #508ADF 0% 0% no-repeat padding-box;
-    margin-top: 7px;
-    width: 160px;
-    height: 44px;
-    border: none;
-    color: white;
-    border-radius: 36px;
-    opacity: 1;
-    cursor: pointer;
-    font-weight: bold;
-    font-size: 16px;
+/* Loader styles */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }
-
-/* CreateAccount styles */
-.CreateAccount {
-    text-align: center;
-}
-
 
 /* Dashboard styles */
 .Dashboard {
-    width: 1920px;
-    height: 1442px;
+    
 }
 
 .sidePanel,
@@ -64,27 +40,77 @@
     box-shadow: 6px 6px 6px #00000012;
     border-radius: 24px;
     opacity: 1;
+    margin-top: 40px;
 
 }
 
+/* Top Features */
+
+.featureWrap {
+    width: 50%;
+    margin: 0 auto;
+    display: inline-block;
+    cursor: pointer;
+    height: 125px;
+    margin-top: 30px;
+}
+
+.singleFeature {
+    background: #E0E6EE 0% 0% no-repeat padding-box;
+    width: 79px;
+    height: 79px;
+    margin-left: 20px;
+    border-radius: 50%;
+}
+
+.feature {
+    border-radius: 50%;
+    width: 67px;
+    height: 67px;
+    background: #3D6DB3 0% 0% no-repeat padding-box;
+    position: relative;
+    top: 6px;
+    left: 6px;
+}
+
+.featureText {
+    text-align: center;
+    letter-spacing: 0px;
+    color: #26579F;
+    font-size: 10px;
+    font-family: Exo, Medium;
+    margin-top: 20px;
+}
+
+.icon-Firewall {
+    background: transparent url('images/shield-icon.svg') no-repeat padding-box;
+    width: 38px;
+    height: 46px;
+    position: relative;
+    top: 10px;
+    left: 14px;
+}
+
+.icon-News {
+    background: transparent url('images/megaphone-icon.svg') no-repeat padding-box;
+    width: 45px;
+    height: 47px;
+    transform: matrix(0.93, 0.36, -0.36, 0.93, 0, 0);
+    position: relative;
+    top: 13px;
+    left: 13px;
+}
+
+/* Bottom Features */
+
 .bottom-features {
-    margin-top: 796px;
+    margin-top: 352px;
     width: 241px;
     height: 106px;
     background: #E9F1FD 0% 0% no-repeat padding-box;
     border-radius: 0px 0px 24px 24px;
     opacity: 1;
     text-align: center;
-}
-
-.feature {
-    top: 136px;
-    left: 60px;
-    width: 79px;
-    height: 79px;
-    background: #E0E6EE 0% 0% no-repeat padding-box;
-    margin: 0 auto;
-    opacity: 1;
 }
 
 .chatWrap,
@@ -103,19 +129,25 @@
     background: #508ADF 0% 0% no-repeat padding-box;
     opacity: 1;
     border-radius: 50%;
+    margin: auto;
+    cursor: pointer;
 }
 
 .chatText,
 .settingsText {
     top: 1000px;
     left: 78px;
-    width: 74px;
+    width: 75px;
     height: 17px;
     text-align: center;
     letter-spacing: 0px;
     color: #508ADF;
     opacity: 1;
     font-size: 13px;
+    margin: auto;
+    font-size: 13px;
+    font-family: Exo, Medium;
+    
 }
 
 .chatIcon {
@@ -124,16 +156,15 @@
     background: transparent url('images/chat.svg') no-repeat padding-box;
     opacity: 1;
     margin: 0 auto;
+    position: relative;
+    top: 12px;
 }
 
-
 .main {
-    /* top: 77px; */
-    /* left: 0px; */
-    width: 75%;
+    width: 1626px;
     height: 1442px;
-    background: #FCFCFC 0% 0% no-repeat padding-box;
     opacity: 1;
+    float: right;
 }
 
 .accountsPanel {
@@ -141,7 +172,6 @@
     margin-left: 27px;
     width: 300px;
     height: 76px;
-    /* transform: matrix(0, -1, 1, 0, 0, 0); */
     background: #EAEAEA 0% 0% no-repeat padding-box;
     box-shadow: 6px 6px 6px #00000012;
     opacity: 1;
@@ -189,6 +219,14 @@
     height: 21px;
     position: relative;
     opacity: 1;
+}
+
+.facebook {
+    background: transparent url('./images/small-facebook.svg') 0% 0% no-repeat padding-box;
+}
+
+.instagram {
+    background: transparent url('./images/small-instagram.svg') 0% 0% no-repeat padding-box;
 }
 
 .noProfile {
@@ -244,7 +282,6 @@
     left: 149px;
     width: 76px;
     height: 76px;
-    /* UI Properties */
     background: transparent url('./images/instagram-icon.svg') 0% 0% no-repeat padding-box;
     opacity: 1;
     position: absolute;
@@ -263,10 +300,11 @@
 }
 
 .followers {
-    font: normal normal medium 16px/52px Exo;
     letter-spacing: 0px;
     color: #21244E;
     opacity: 1;
+    font-family: Exo, Medium;
+    font-size: 16px;
 }
 
 .progressBar {
@@ -301,6 +339,7 @@
     color: #FFFFFF;
     opacity: 1;
     transform: matrix(-1, 0, 0, -1, 0, 0);
+    margin-right: 60px;
 }
 
 
@@ -331,11 +370,21 @@
     text-transform: uppercase;
 }
 
+.profileIcon,
+.userData,
+.progressBar,
+.accountTypeWrapper,
 .securityWrap,
 .loadMoreWrap,
 .problemsWrap {
-    width: 100%;
-    margin-top: 15px;
+    margin: auto;
+    width: 1437px;
+}
+
+.securityWrap,
+.loadMoreWrap,
+.problemsWrap {
+    margin-top: 30px;
 }
 
 .securityTitle {
@@ -352,23 +401,38 @@
     width: 897px;
     height: 341px;
     opacity: 1;
-    margin-top: 28px;
+    margin-left: 270px;
 }
 
-.securityTable tr {
-    
+table {
+    border-collapse: collapse;
+}
+
+tr {
+    border-bottom: 1pt solid #D5D5D5;
 }
 
 .securityTable th {
     font-size: 17px;
     color: #21244E;
     font-weight: bold;
+    font: normal normal bold 17px/58px Exo;
 }
 
 .securityTable thead {
     text-align: justify;
 }
 
+.task {
+    font: normal normal 600 16px/23px Exo;
+    color: #508ADF;
+    text-decoration: underline;
+}
+
+.priorityTh {
+    width: 103px;
+    text-align: center;
+}
 .priorityWrap {
     width: 100px;
     height: 32px;
@@ -381,6 +445,7 @@
     vertical-align: middle;
     text-align: center;
 }
+
 
 .High {
     background-color: #FC5964;
@@ -396,37 +461,69 @@
 
 .effortWrap {
     color: #21244E;
-    /* font-weight: bold; */
     font-size: 16px;
-    /* text-align: center; */
 }
+
+.effort, .effort th  {
+    text-align: center;
+}
+
+.effortTh {
+    text-align: center;
+}
+
+.doneTh {
+    text-align: center;
+}
+
+.done {
+    text-align: center;
+}
+input[id="checkbox-done"] {
+    width: 24px;
+    height: 24px;
+    border: 2px solid #508ADF !important;
+    border-radius: 6px;
+}
+
+
 .moreIcon {
     width: 35px;
     height: 34px;
-    /* background: transparent url('img/Group 1202.png') 0% 0% no-repeat padding-box; */
+    background: transparent url('./images/more-btn.svg') 0% 0% no-repeat padding-box;
     opacity: 1;
     margin: 0 auto;
+    cursor: pointer;
 }
 
 .moreText {
     text-align: center;
     text-decoration: underline;
-    font: normal normal medium 16px/58px Exo;
+    letter-spacing: 0px;
+    color: #21244E;
+    font-size: 16px;
+    opacity: 1;
+    cursor: pointer;
+    font-family: Exo, Medium;
+}
+
+.problemsTitle {
+    margin-left: 273px;
+    font: normal normal 900 32px/58px Exo;
     letter-spacing: 0px;
     color: #21244E;
     opacity: 1;
-    cursor: pointer;
 }
-
-.problemsTitle {}
 
 .problems {
     text-align: center;
+    width: 900px;
+    margin-left: 255px;
 }
 
 .singleProblem {
     margin-top: 10px;
-    margin-left: 15px;
+    margin-left: 16px;
     width: 208px;
     height: 167px;
     background: #F0F0F0 0% 0% no-repeat padding-box;
@@ -434,5 +531,48 @@
     border-radius: 10px;
     opacity: 1;
     display: inline-block;
+}
 
+.problemIcon {
+    width: 50px;
+    height: 50px;
+    margin: 10px auto;
+}
+
+.ptoblemText {
+    text-align: center;
+    font: normal normal bold 16px/18px Exo;
+    letter-spacing: 0px;
+    color: #21244E;
+    opacity: 1;
+}
+
+.fixItBtnWrap {
+    margin-top: 10px;
+}
+
+.fixItBtn {
+    width: 157px;
+    height: 33px;
+    background: #508ADF 0% 0% no-repeat padding-box;
+    border-radius: 19px;
+    opacity: 1;
+    border: none;
+    color: white;
+    font: normal normal bold 14px/18px Exo;
+    cursor: pointer;
+}
+
+.moreProblems {
+    height: 21px;
+    text-decoration: underline;
+    letter-spacing: 0px;
+    color: #21244E;
+    opacity: 1;
+    font-size: 16px;
+    font-family: Exo, Medium;
+    text-align: right;
+    margin-top: 10px;
+    margin-right: 283px;
+    cursor: pointer;
 }

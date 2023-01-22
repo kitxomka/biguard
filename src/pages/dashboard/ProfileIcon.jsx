@@ -4,8 +4,8 @@ const ProfileIcon = () => {
   return (
     <div className="profileIcon">
       <div className="iconWrap">
-        <div className="photo"></div>
-        <div className="platformIcon"></div>
+        <div className="photo"/>
+        <div className="platformIcon"/>
       </div>
     </div>
   );

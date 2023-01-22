@@ -1,9 +1,12 @@
 import React from 'react';
 
 const LoadMore = () =>  {
+  const loadMore = () => {
+    alert('Loading More ....')
+  }
   return (
-    <div className="loadMoreWrap">
-        <div className='moreIcon'>ic</div>
+    <div className="loadMoreWrap" onClick={loadMore}>
+        <div className='moreIcon'/>
         <div className='moreText'>
             Load more
         </div>

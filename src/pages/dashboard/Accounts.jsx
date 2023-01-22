@@ -1,9 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
+// import React, { useState } from "react";
 import { useSelector } from "react-redux";
 
 
 const Accounts = () => {
-  const [isActive, setIsActive] = useState("instagram");
+  // const [isActive, setIsActive] = useState("instagram");
+  const isActive = 'instagram';
 
   const accountsData = useSelector((state) => state.app.userAccounts);
 
@@ -18,10 +20,8 @@ const Accounts = () => {
               </div>
             ) : (
               <>
-                <div className="profilePhoto"></div>
-                {account?.iconSrc ? <div className="profileType">
-                  <img src={account?.iconSrc} />
-                </div> : null}
+                <div className="profilePhoto"/>
+                <div className={`profileType ${account.platform}`} />
               </>
             )}
           </div>

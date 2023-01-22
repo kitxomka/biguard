@@ -1,5 +1,15 @@
 import React, { useEffect, useState } from "react";
+import Button from "./Button";
 import { useNavigate } from "react-router-dom";
+import styled from "styled-components";
+
+const StyledHeader = styled.div`
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 77px;
+  border-bottom: 2px solid #7ba6e6;
+`;
 
 const Header = () => {
   const [urlElement, setUrlElement] = useState("");
@@ -10,17 +20,22 @@ const Header = () => {
     setUrlElement(urlElements[3]);
   });
 
+  const logOut = () => {
+    navigate("/");
+  };
+
   return (
-    <div className="Header">
-      <div className="logo-wrap"></div>
+    <StyledHeader>
+      <div className="logo-wrap" />
       {urlElement ? (
         <div className="logOutBtn-wrap">
-          <button className="logOutBtn" onClick={() => navigate("/")}>
-            Log Out
-          </button>
+          <Button
+            text={"Log Out"}
+            btnFunction={logOut}
+          />
         </div>
       ) : null}
-    </div>
+    </StyledHeader>
   );
 };
 

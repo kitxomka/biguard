@@ -6,7 +6,7 @@ const AccountType = () => {
 
   return (
     <div className='accountTypeWrapper'>
-        <div className="accountTypeIcon"></div>
+        <div className="accountTypeIcon"/>
         <div className="accountTypeText">{userData.type}</div>
     </div>
   )
